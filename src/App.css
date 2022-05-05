@@ -1,38 +1,129 @@
-.App {
+.headSection{
+  padding-left: 100px;
+  padding-bottom: 30px;
+}
+
+.headButton{
+  margin: 10px;
+  align-items: center;
+  background-color: white;
+  border: 1;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headButton:hover,
+.headButton:focus { 
+  background-color: black;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img-area{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.single-img{
+  margin: 0 15px 25px 15px;
+  height: 330px;
+background-color: black;
+}
+
+.nftImg{
+  width: 370px;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+
+h3{
   color: white;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-button{
+  margin-left: 20px;
+  margin-top: 15px;
+background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  max-width: none;
+  height: 50px;
+  width: 150px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: left;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/* ----------- tablet Screens ----------- */
+
+@media(min-width:500px) and (max-width: 1024px){
+
+  .headSection{
+    padding-left: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  
+}
+
+
+/* ----------- Mobile Screens ----------- */
+
+@media (max-width: 500px) {
+  .headSection{
+    padding-left: 30px;
+  }
+
+  .headButton{
+    font-size: 19px;
+  font-weight: 700;
+  }
+
+  .btns{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
   }
 }
